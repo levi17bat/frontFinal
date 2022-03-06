@@ -1,0 +1,53 @@
+<mat-card>
+    <mat-card-title>Nova Imagem</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome Imagem" [(ngModel)]="imagem.nomeImagem" name="name" autocomplete="off">
+        </mat-form-field>
+
+
+        <mat-form-field>
+            <input matInput placeholder="Texto" [(ngModel)]="imagem.texto" name="texto" autocomplete="off">
+        </mat-form-field>
+
+    </form>
+    <table>
+        <tr>
+            <mat-label>Assunto</mat-label>
+            <select type="string" [(ngModel)]="imagem.assunto_idAssunto">
+            <option *ngFor="let assun of assuntos" value={{assun.nomeAssunto}} >
+          {{assun.nomeAssunto}}
+        </option>
+    </select>
+
+        </tr>
+    </table>
+
+
+
+    <div style="margin-top: 10px">
+        <div class="custom-file">
+            Upload de Imagem :
+            <input type="file" class="custom-file-input" id="customFile" (change)="onChange($event)" />
+            <label class="custom-file-label" for="customFile" id="customFileLabel"></label>
+        </div>
+
+
+        <div class="custom-file">
+            Upload de Áudio__ :
+            <input type="file" class="custom-file-input" id="customFile2" (change)="onChange2($event)" />
+            <label class="custom-file-label" for="customFile" id="customFileLabel2"></label>
+        </div>
+
+
+
+        <button mat-raised-button (click)="criarImagem()" color="primary" [disabled]="!files">
+        Salvar
+        </button>
+
+
+        <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+    </div>
+</mat-card>

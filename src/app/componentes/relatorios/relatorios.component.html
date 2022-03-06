@@ -1,0 +1,42 @@
+<mat-card class="home mat-elevation-z3">
+    <mat-card-title class="title">
+        Relatórios da Plataforma
+    </mat-card-title>
+    <table name="relatorio" matSort>
+        <td>
+
+            <tr>
+                <mat-card-subtitle>
+                    Selecione a opção no campo disponível para ver as contas cadastradas na plataforma
+                </mat-card-subtitle>
+            </tr>
+            <tr>
+
+                <td>
+                    Tipo de Conta:
+                    <mat-form-field>
+                        <mat-label>Select an option</mat-label>
+                        <select [(ngModel)]="selecao" type="number">
+                        <option value="1">Professor</option>
+                        <option value="2">Usuário</option>
+                        <option value="3">Todos*</option>
+                    </select>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+
+                <button mat-raised-button (click)="criarRelatorio()" color="primary">
+                    Criar Relatório
+                </button>
+
+
+
+            </tr>
+
+        </td>
+    </table>
+
+
+
+</mat-card>

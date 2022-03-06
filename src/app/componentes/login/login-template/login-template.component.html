@@ -1,0 +1,42 @@
+<div id="login_container">
+
+    <tr>
+        <td>
+            <h2>Fazer Login</h2>
+
+            <form>
+                <label for="nick">Nick</label>
+                <input matInput placeholder="Digite o Nick" [(ngModel)]="login.nick" name="nick" autocomplete="off">
+
+
+                <label for="password">Password</label>
+                <input type="password" matInput placeholder="Digite a Senha" [(ngModel)]="login.senha" name="senha" autocomplete="off">
+
+            </form>
+            <table>
+                <tr>
+                    <mat-label>Selecione o tipo de conta</mat-label>
+
+                    <select type="string" [(ngModel)]="selecao" type="number">
+                        <option value="1">Professor</option>
+                        <option value="2">Usuário</option>
+                        </select>
+
+                </tr>
+            </table>
+
+
+            <button mat-raised-button (click)="fazerLogin()" [disabled]="!selecao">
+               Login
+                </button>
+            <button mat-raised-button (click)="cancelar()">
+    Cancelar
+    </button>
+            <button mat-raised-button (click)="cadastro()">
+        Cadastrar
+        </button>
+
+
+        </td>
+    </tr>
+</div>

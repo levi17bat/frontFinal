@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-title>Nova Disciplina</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome Disciplina" [(ngModel)]="disciplina.nomeDisciplina" name="nomeDisciplina" autocomplete="off">
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button color="primary" (click)="criarDisciplina()">
+    Criar
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+    Cancelar
+    </button>
+</mat-card>

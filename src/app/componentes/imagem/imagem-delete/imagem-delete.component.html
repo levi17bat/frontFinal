@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-title>Confirma exclusão da Imagem?</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome Imagem" [(ngModel)]="imagem.nomeImagem" name="name" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Assunto" [(ngModel)]="imagem.assunto_idAssunto" name="assunto" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Texto" [(ngModel)]="imagem.texto" name="texto" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Figura" [(ngModel)]="imagem.figura" name="figura" disabled>
+        </mat-form-field>
+
+
+        <mat-form-field>
+            <input matInput placeholder="Áudio" [(ngModel)]="imagem.audio" name="audio" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="delete()" color="primary">
+    Excluir
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+    Cancelar
+    </button>
+</mat-card>

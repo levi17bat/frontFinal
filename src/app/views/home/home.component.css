@@ -1,0 +1,48 @@
+.home .title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+}
+
+mat-card.home {
+    width: 90%;
+    margin: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+mat-card.relative-parent.title {
+    width: 100%;
+    margin: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin: 10px 15px 2px 20px;
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+}
+
+html {
+    background-color: #00539F;
+}

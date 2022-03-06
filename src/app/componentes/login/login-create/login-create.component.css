@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+button {
+    display: inline;
+    margin: 20px 15px;
+}
+
+button:hover {
+    color: #123c63;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin: 10px 15px 2px 20px;
+    font-size: 25px;
+    line-height: 2;
+    text-align: center;
+}
+
+html {
+    background-color: #00539F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323232;
+}
+
+#login_container {
+    border: 1;
+    background-color: #ebebeb;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    text-align: center;
+    border-radius: 10px;
+}

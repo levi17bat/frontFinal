@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-title>Novo Assunto</mat-card-title>
+    <form>
+
+
+        <mat-form-field>
+            <input matInput placeholder="Nome Assunto" [(ngModel)]="assunto.nomeAssunto" name="nomeAssunto" autocomplete="off">
+        </mat-form-field>
+
+    </form>
+
+
+    <table>
+        <tr>
+            <mat-label>Disciplina</mat-label>
+
+            <select type="string" [(ngModel)]="assunto.disciplina_idDisciplina">
+            <option *ngFor="let discipl of disciplina" value={{discipl._id}} >
+          {{discipl.nomeDisciplina}}
+        </option>
+    </select>
+
+        </tr>
+    </table>
+
+
+    <button mat-raised-button color="primary" (click)="criarAssunto()">
+    Criar
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+    Cancelar
+    </button>
+</mat-card>
